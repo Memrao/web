@@ -1,0 +1,1295 @@
+body {
+    background: url('../images/banner-bg.png') no-repeat center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    /* Base font size is now 1rem */
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #FFA500;
+}
+
+
+/* Header Styles */
+
+
+/* Toggle Icon Container */
+
+.category-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.125rem;
+    /* 18px equivalent */
+    padding: 9.625rem;
+    /* 10px equivalent */
+    position: relative;
+    left: 10px;
+    /* Aligns the toggle to the left */
+}
+
+
+/* Arrow Icon with Rotation Effect */
+
+#categoryIcon {
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    /* Rotates the arrow when clicked */
+    transition: transform 0.3s ease;
+}
+
+
+/* Adjusting the image arrow icon */
+
+#imgarrowIcon {
+    padding: 0;
+    /* Removing unnecessary padding */
+    margin-left: 7px;
+    /* Aligns the icon next to the logo */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 0 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 9rem;
+}
+
+
+/* Container for category list */
+
+#categoryDropdown {
+    position: absolute;
+    top: 50px;
+    /* Adjust as necessary */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 800px;
+    /* Adjust the width */
+    height: auto;
+    /* Auto height to fit content */
+    overflow: auto;
+    /* Show scroll if necessary */
+    border-radius: 3rem;
+    /* Add rounded corners */
+    padding: 10px;
+    /* Ensure padding around the dropdown */
+}
+
+
+/* Style for category list */
+
+#categoryList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 8px;
+    /* Space between items */
+    list-style-type: none;
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    height: auto;
+    /* Adjust height as needed */
+}
+
+
+/* Style for list items */
+
+#categoryList li {
+    padding: 8px 12px;
+    border-radius: 4px;
+    /* Rounded corners for list items */
+    background-color: #f9f9f9;
+    /* Light background color for items */
+    transition: background-color 0.3s, border 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+
+/* Style for links within list items */
+
+#categoryList li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+    /* Center text within each item */
+}
+
+
+/* Hover effect for list items */
+
+#categoryList li:hover {
+    background-color: #e0e0e0;
+    /* Change background color on hover */
+    border: 1px solid #ddd;
+    /* Add border on hover */
+}
+
+
+/* Remove borders from dropdown */
+
+#categoryDropdown {
+    border: none;
+    /* Remove the border from the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add shadow if needed */
+}
+
+
+/* Navigation Menu */
+
+ul li {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    color: #FFA500;
+}
+
+#loginBtn {
+    background-color: #FFA500;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#loginBtn:hover {
+    background-color: #333;
+}
+
+
+/* Furniture Section */
+
+.furniture h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3.6rem;
+    color: #000000;
+}
+
+.furniture-description p {
+    font-size: 1rem;
+    color: #5e5e5e;
+    text-align: center;
+    margin-top: 1rem;
+    max-width: 34rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Contact Us Button */
+
+.contact-button {
+    text-align: center;
+    margin-top: 1.4rem;
+    padding-bottom: 19em;
+}
+
+.contact-button button {
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 1.5625rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10em;
+}
+
+.contact-button button:hover {
+    background-color: #333;
+}
+
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .furniture h1 {
+        font-size: 2.25rem;
+        /* Smaller font size for smaller screens */
+    }
+    .furniture-description p {
+        font-size: 0.875rem;
+        /* Adjust text size for mobile */
+    }
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    ul li {
+        margin: 0.5rem 0;
+        /* Add space between items for better mobile layout */
+    }
+    #loginBtn {
+        padding: 0.5rem 0.875rem;
+        /* Smaller button padding */
+        font-size: 0.875rem;
+    }
+    .contact-button {
+        padding-bottom: 10em;
+    }
+    .contact-button button {
+        font-size: 1rem;
+        /* Adjust button font size */
+        padding: 0.875rem 1.5rem;
+        /* Adjust padding */
+    }
+}
+
+
+/* Services Section */
+
+.services {
+    background-color: rgba(255, 255, 255, 225);
+    padding: 8rem 0;
+}
+
+.services-heading h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+.services-description p {
+    text-align: center;
+    color: #666;
+    margin: 2.3rem auto;
+    max-width: 43.75rem;
+    /* 700px equivalent */
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    /* Adjusted for even spacing */
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.service-box {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.625rem;
+    /* 10px equivalent */
+    box-shadow: 0 0.5rem 0.95rem rgba(0, 0, 0, 0.1);
+    /* Adjusted shadow for smaller boxes */
+    width: 15%;
+    /* Adjust width to fit your design */
+    margin: 0 0.25rem;
+    /* Reduced margin to decrease gap */
+    border: .1px solid rgb(233, 232, 232);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition */
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    /* Slightly enlarges the box */
+    box-shadow: 0 0.75rem 0.9rem rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+}
+
+.service-box img {
+    width: 3.9rem;
+    /* 80px equivalent */
+}
+
+.service-box h2 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.service-box p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.service-box button {
+    background-color: #FFA500;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 1.25rem;
+    /* 20px equivalent */
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.service-box button:hover {
+    background-color: #333;
+}
+
+
+/* About Us Section */
+
+.about-us {
+    padding: 4rem 1rem;
+    /* Adjusted padding for smaller screens */
+    background-color: #FFA500;
+}
+
+.about-heading {
+    text-align: center;
+    /* Center text on mobile for better alignment */
+    margin: 0 auto;
+    max-width: 90%;
+    /* Make it slightly narrower for better alignment */
+}
+
+.about-heading h1 {
+    font-size: 2rem;
+    /* Adjusted font size for mobile */
+    color: #ffffff;
+    margin: 0;
+}
+
+.about-description {
+    text-align: center;
+    /* Center text on mobile */
+    margin: 2rem auto;
+    max-width: 90%;
+    /* Full width with margins for better alignment */
+}
+
+.about-description p {
+    color: #ffffff;
+    font-size: 0.875rem;
+    /* Adjusted font size for readability */
+    line-height: 1.6;
+    /* Improved readability */
+}
+
+.about-content {
+    text-align: center;
+    /* Center text and content on mobile */
+    margin: 2rem auto;
+    max-width: 90%;
+    /* Ensure the content fits well */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items */
+}
+
+.about-content img {
+    width: 100%;
+    max-width: 300px;
+    /* Limit maximum width for better fit */
+    border-radius: 0.625rem;
+    margin-bottom: 1rem;
+    /* Space between image and button */
+}
+
+.about-content button {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    margin-top: 1.2rem;
+    width: 100%;
+    /* Full width for mobile screens */
+    max-width: 300px;
+    /* Limit button width */
+}
+
+.about-content button:hover {
+    background-color: #ffffff;
+    color: #FFA500;
+}
+
+.button-description {
+    color: #ffffff;
+    margin-top: 0.5rem;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .about-heading h1 {
+        font-size: 1.75rem;
+        /* Slightly smaller on smaller tablets */
+    }
+    .about-description p {
+        font-size: 0.875rem;
+    }
+    .about-content img {
+        max-width: 100%;
+        /* Ensure image takes full width on smaller screens */
+    }
+    .about-content button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-heading h1 {
+        font-size: 1.5rem;
+    }
+    .about-description p {
+        font-size: 0.75rem;
+    }
+    .about-content button {
+        font-size: 0.875rem;
+        padding: 0.75rem;
+    }
+}
+
+
+/* Our Furniture Section */
+
+.our-furniture {
+    /* padding: 2rem; */
+    background-color: #ffffff;
+    /* Light background for contrast */
+    margin: 6rem;
+}
+
+.our-furniture-heading {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.our-furniture-heading h1 {
+    font-size: 1.8rem;
+    color: #333;
+    /* font-weight: bold; */
+    text-align: center;
+}
+
+.our-furniture-description {
+    text-align: center;
+    margin-bottom: 3.8rem;
+}
+
+.our-furniture-description p {
+    max-width: 45rem;
+    /* 720px equivalent */
+    margin: 0 auto;
+    color: #666;
+    font-size: 0.81rem;
+}
+
+.our-furniture-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* Adjust gap between boxes */
+}
+
+.furniture-box {
+    text-align: center;
+    width: 200%;
+    padding: 0;
+    margin: 0;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+
+/* Our Furniture Section */
+
+.our-furniture-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.furniture-box {
+    background-color: white;
+    padding: .20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 300px;
+}
+
+.furniture-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.furniture-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.furniture-box h2 {
+    font-size: 1rem;
+    color: #FFA500;
+    margin: .1rem 0;
+    text-align: left;
+}
+
+.furniture-box p {
+    font-size: 0.6rem;
+    color: #666;
+    text-align: left;
+}
+
+.furniture-box:hover {
+    /* transform: scale(1.05); */
+    /* Slightly enlarges the box */
+    /* box-shadow: 0 0.75rem 1rem rgba(0, 0, 0, 0.2); */
+    /* Enhanced shadow on hover */
+}
+
+
+/* Who We Are Section */
+
+.who-we-are {
+    padding: 3rem 0;
+    background: url(../images/bg-1.png);
+    position: relative;
+    text-align: center;
+}
+
+.who-we-are-heading h1 {
+    font-size: 1.9rem;
+    color: #ffffff;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 1;
+    /* Ensures heading is above the image */
+}
+
+.who-we-are-description {
+    margin: 2.2rem auto;
+    max-width: 50%;
+    /* Centers the text and restricts width */
+    position: relative;
+    z-index: 1;
+    /* font-size: 1rem; */
+    margin-bottom: 5rem;
+}
+
+.who-we-are-description h2 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.who-we-are-description p {
+    font-size: 1rem;
+    color: #ffffff;
+    /* line-height: 1.5; */
+    width: 100%;
+}
+
+.who-we-are-button {
+    margin-top: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.who-we-are-button button {
+    background-color: #000000;
+    color: #fff;
+    padding: 0.75rem 2.9rem;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.who-we-are-button button:hover {
+    background-color: white;
+    color: #FFA500;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .services-container,
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-box,
+    .foot-box {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    .about-content img {
+        width: 80%;
+    }
+    .header .head-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo img {
+        width: 7.5rem;
+        /* Smaller logo */
+    }
+}
+
+
+/* Our Projects Section */
+
+.our-projects {
+    background-color: #fff;
+    /* padding: 60px 20px; */
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* Heading */
+
+.our-projects-heading h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+/* Project Slider */
+
+.project-slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    padding: .20px 0;
+    /* Add some padding for better visual spacing */
+}
+
+
+/* Slider Container */
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    /* Centers the images horizontally */
+    /* Space between the images */
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* Each Slide */
+
+.project-slide {
+    position: relative;
+    min-width: 32%;
+    /* Adjust the size of the image container */
+    box-sizing: border-box;
+}
+
+
+/* Image Styling */
+
+.project-slide img {
+    width: 70%;
+    /* Make sure the image takes up the full width of its container */
+    height: 100%;
+    /* Maintain aspect ratio */
+    max-height: 250px;
+    /* Control the maximum height */
+    object-fit: cover;
+    /* Ensures the image fits nicely */
+    /* border-radius: 10px; */
+}
+
+
+/* Text Overlay Styling */
+
+.project-text {
+    position: absolute;
+    bottom: 20px;
+    /* Adjust as needed */
+    left: 20px;
+    /* Adjust as needed */
+    /* background: rgba(0, 0, 0, 0.5); */
+    /* Semi-transparent background */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    /* Adjust as needed */
+    width: calc(100% - 40px);
+    /* Adjust based on the left/right padding */
+    text-align: center;
+    /* Center text */
+}
+
+
+/* Arrows */
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    /* border-radius: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transform: translateY(-50%);
+    transition: background-color 0.3s;
+}
+
+.slider-arrow:hover {
+    background-color: #333;
+}
+
+.slider-arrow-left {
+    left: 50px;
+}
+
+.slider-arrow-right {
+    right: 50px;
+}
+
+
+/* Dots for Slider */
+
+.slider-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.slider-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider-dot.active {
+    background-color: #000;
+}
+
+
+/* What Is Says Our Clients Section */
+
+.what-is-says-our-clients {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+/* Heading */
+
+.what-is-says-our-clients-heading h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Description */
+
+.what-is-says-our-clients-description p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+
+/* Clients Container */
+
+.what-is-says-our-clients-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* Ensure responsive layout */
+}
+
+
+/* Client Box */
+
+.client-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    /* Adjust width as needed */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.client-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.client-box h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.client-box p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Hover Effect for Client Box */
+
+.client-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* What Is Says Our Clients Section */
+
+.what-is-says-our-clients {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    /* Make sure dots are positioned correctly */
+}
+
+
+/* Heading */
+
+.what-is-says-our-clients-heading h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Description */
+
+.what-is-says-our-clients-description p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+
+/* Clients Container */
+
+.what-is-says-our-clients-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* Ensure dots are positioned relative to this container */
+}
+
+
+/* What Is Says Our Clients Section */
+
+.what-is-says-our-clients {
+    background-color: #f9f9f9;
+    /* Adjust background color if needed */
+    padding: 60px 20px;
+    position: relative;
+    /* Positioning context for dots */
+}
+
+
+/* Heading */
+
+.what-is-says-our-clients-heading h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Description */
+
+.what-is-says-our-clients-description p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+
+/* Container for Client Boxes */
+
+.what-is-says-our-clients-container {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    /* Positioning context for dots */
+}
+
+
+/* Client Box Styles */
+
+.client-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.client-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.client-box h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.client-box p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* Hover Effect for Client Box */
+
+.client-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Left Client Box */
+
+.client-box-left {
+    width: 60%;
+    height: auto;
+}
+
+
+/* Right Client Box */
+
+.client-box-right {
+    width: 40%;
+    height: auto;
+}
+
+
+/* Dots */
+
+.slider-dots {
+    position: absolute;
+    left: 20px;
+    /* Position on the left side */
+    bottom: 20px;
+    /* Position at the bottom of the section */
+    display: flex;
+    gap: 10px;
+    /* Space between dots */
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider-dot.active {
+    background-color: #000;
+}
+
+
+/* Contact Us Section */
+
+.contact-us {
+    background-image: url('../images/contact-bg.png');
+    /* Replace with your image path */
+    background-size: cover;
+    /* Cover the entire section */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Do not repeat the background image */
+    padding: 2px 2px;
+    /* Adjust padding as needed */
+    color: #fff;
+    /* Ensure text is readable against background */
+}
+
+
+/* Heading adjustments */
+
+.contact-us-heading h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    margin-top: 150px;
+    /* Increased margin to move the heading down */
+    text-align: left;
+    display: block;
+    margin-left: 185px;
+    margin-right: auto;
+    padding: 20px;
+}
+
+
+/* Contact us container */
+
+.contact-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Changed to flex-start to ensure it aligns correctly */
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    /* Added margin-top to control spacing below the heading */
+}
+
+
+/* Contact us form */
+
+.contact-us-form {
+    width: 450px;
+    padding: 30px;
+    margin-top: 0;
+    /* Adjusted margin to remove extra spacing */
+    margin-bottom: 50px;
+}
+
+.contact-us-form input,
+.contact-us-form textarea {
+    width: 100%;
+    padding: 10px;
+    height: 4vh;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-us-form button {
+    width: 30%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 3px solid white;
+    color: rgb(87, 87, 87);
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.contact-us-form button:hover {
+    background-color: #555;
+}
+
+.contact-us-map img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Footer Styles */
+
+footer {
+    /* background-color: #333; */
+    color: #fff;
+    text-align: center;
+    /* padding: 76px 0; */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center the footer sections */
+    gap: 15px;
+    /* Reduce gap between sections */
+    padding: 30px;
+}
+
+
+/* Footer Section Styling */
+
+footer .footer-section {
+    flex: 1;
+    margin: 10px;
+    max-width: 200px;
+    /* Restrict width of each section for better alignment */
+    font-style: normal;
+}
+
+footer h3 {
+    /* border-bottom: .2px solid #fff; */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+/* Paragraph Styling */
+
+footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+/* Useful Links Section */
+
+footer ul {
+    /* list-style-type: none; */
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    text-align: left;
+}
+
+.footer-section ul {
+    display: block;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Email Input Styling */
+
+footer input[type="email"] {
+    padding: 9px;
+    border: none;
+    border-radius: 0 0 0 .5px;
+    /* width: 65%; */
+    /* Adjust width to align with the button */
+    margin-right: 5px;
+    /* Space between input and button */
+    margin: 2px;
+    margin-top: 2px;
+    padding-top: 120px;
+}
+
+
+/* Subscribe Button Styling */
+
+footer button.btn {
+    background-color: #FFA500;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    /* Make the button and input align */
+}
+
+footer button.btn:hover {
+    background-color: #ff8c00;
+}
+
+
+/* General Footer Text Styling */
+
+footer p {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+    text-align: left;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+        /* Stack sections on smaller screens */
+        align-items: center;
+        /* Center the stacked sections */
+    }
+    footer input[type="email"],
+    footer button.btn {
+        width: 100%;
+        /* Full width on smaller screens */
+        margin-bottom: 10px;
+    }
+}
+
+.footer-copyright {
+    text-align: center;
+    /* bottom: 1rem; */
+    /* padding: 8px; */
+    border: 1px solid black;
+}

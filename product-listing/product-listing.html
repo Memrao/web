@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <!-- Ensure the path to your CSS file is correct -->
+    <link rel="stylesheet" href="product-listing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <ul id="navList">
+            <!-- Logo ,navigation, login button, category dropdown -->
+
+            <a href="home.html" text="HOME"></a>
+        </ul>
+        </nav>
+    </header>
+    <!-- Sidebar for Cart -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <h2>Cart</h2>
+        <div id="cart-items"></div>
+        <button id="close-sidebar">Close</button>
+    </div>
+    <div class="h1">
+        <h1>SHOP</h1>
+    </div>
+
+    <!-- Preloader (hidden by default) -->
+    <div id="preloader" style="display: none;">Loading...</div>
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="productGrid">
+        <!-- Product cards will be dynamically inserted here -->
+    </div>
+
+    <!-- Pagination Container -->
+    <div id="pagination-container">
+        <div class="pagination" id="pagination">
+            <!-- Pagination buttons will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Optional: Additional sections for product details and review -->
+    <!-- Uncomment and modify as needed -->
+    <!--
+    <div id="productDetails">
+        <div class="image">
+            <img src="path-to-image" alt="Product Image">
+        </div>
+        <div class="describe">
+            <h1>Product Name</h1>
+            <h3>Product Category</h3>
+            <p>Product description goes here.</p>
+        </div>
+    </div>
+
+    <div id="ratingSection">
+        <div id="ratingStars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+        <div id="reviewsList">
+            <h3>Reviews</h3>
+            <div class="review">
+                <div class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>This is a review.</p>
+            </div>
+        </div>
+        <div id="reviewSubmission">
+            <textarea placeholder="Write a review..."></textarea>
+            <button id="submitReviewButton">Submit Review</button>
+        </div>
+    </div>
+    -->
+    <footer id="footerContent">
+        <!-- Footer content will be dynamically inserted here by JavaScript -->
+    </footer>
+    <!-- Copyright section -->
+    <div class="footer-copyright">
+        <p>@2024 All Rights Reserved. Design by Memona Rao</p>
+    </div>
+    <!-- Ensure the path to your JS file is correct -->
+    <script src="product-listing.js"></script>
+</body>
+
+</html>

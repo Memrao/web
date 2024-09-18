@@ -1,0 +1,405 @@
+body {
+    /* background: url('../images/banner-bg.png') no-repeat center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px; */
+    /* Base font size */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* // header */
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #FFA500;
+}
+
+
+/* Header Styles */
+
+.category-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#categoryIcon {
+    transition: transform 0.3s ease;
+}
+
+#categoryDropdown {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+#categoryList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#categoryList li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 0 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 9rem;
+    /* 150px equivalent */
+}
+
+.dropdown-container {
+    padding-right: 2rem;
+}
+
+#filterDropdown {
+    padding: 0.5rem;
+    border-radius: 0.625rem;
+    /* 10px equivalent */
+    background-color: #fff;
+    border: 0.0625rem solid #FFA500;
+    /* 1px equivalent */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+
+/* Navigation Menu */
+
+ul li {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    color: #FFA500;
+}
+
+#loginBtn {
+    background-color: #FFA500;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1.25rem;
+    /* 20px equivalent */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#loginBtn:hover {
+    background-color: #333;
+}
+
+
+/* Container for the categories */
+
+#category-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    /* Adjust spacing between items */
+}
+
+
+/* Style for each category item */
+
+.category-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Hover effect for category items */
+
+.category-item:hover {
+    background-color: #f0f0f0;
+}
+
+#search-section {
+    margin-bottom: 2rem;
+}
+
+#search-input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-input:focus {
+    border-color: #FFA500;
+}
+
+
+/* Basic container styling */
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header styling */
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Search bar styling */
+
+#search-bar {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Category list styling */
+
+#category-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    /* Spacing between items */
+}
+
+
+/* Category item styling */
+
+.category-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Pagination styling */
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#pagination button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+#pagination button:hover {
+    background-color: #ddd;
+}
+
+#pagination .active {
+    background-color: #007bff;
+    color: white;
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 76px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center the footer sections */
+    gap: 15px;
+    /* Reduce gap between sections */
+    padding: 30px;
+}
+
+
+/* Footer Section Styling */
+
+footer .footer-section {
+    flex: 1;
+    margin: 10px;
+    max-width: 200px;
+    /* Restrict width of each section for better alignment */
+    font-style: normal;
+}
+
+footer h3 {
+    /* border-bottom: .2px solid #fff; */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+/* Paragraph Styling */
+
+footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+/* Useful Links Section */
+
+footer ul {
+    /* list-style-type: none; */
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    text-align: left;
+}
+
+.footer-section ul {
+    display: block;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Email Input Styling */
+
+footer input[type="email"] {
+    padding: 9px;
+    border: none;
+    border-radius: 0 0 0 .5px;
+    /* width: 65%; */
+    /* Adjust width to align with the button */
+    margin-right: 5px;
+    /* Space between input and button */
+    margin: 2px;
+    margin-top: 2px;
+    padding-top: 120px;
+}
+
+
+/* Subscribe Button Styling */
+
+footer button.btn {
+    background-color: #FFA500;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    /* Make the button and input align */
+}
+
+footer button.btn:hover {
+    background-color: #ff8c00;
+}
+
+
+/* General Footer Text Styling */
+
+footer p {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+    text-align: left;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+        /* Stack sections on smaller screens */
+        align-items: center;
+        /* Center the stacked sections */
+    }
+    footer input[type="email"],
+    footer button.btn {
+        width: 100%;
+        /* Full width on smaller screens */
+        margin-bottom: 10px;
+    }
+}
+
+.footer-copyright {
+    text-align: center;
+    bottom: 1rem;
+    padding: 8px;
+}

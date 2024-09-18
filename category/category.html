@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories</title>
+    <link rel="stylesheet" href="category.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            background-color: #f4f4f4;
+        }
+        
+        #container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1200px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        #header {
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        
+        #search-bar {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            background-color: #f9f9f9;
+        }
+        
+        #search-input {
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        #category-list {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .category-item {
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #eee;
+        }
+        
+        .category-item:hover {
+            background-color: #ddd;
+        }
+        
+        #product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .product-item {
+            flex: 1 1 calc(25% - 20px);
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .product-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .product-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <ul id="navList">
+                <!-- Logo will be inserted here by JavaScript -->
+                <!-- Navigation links will be inserted here by JavaScript -->
+                <!-- Login button will be inserted here by JavaScript -->
+                <!-- Category dropdown will be inserted here by JavaScript -->
+            </ul>
+            </nav>
+        </header>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search for products...">
+        </div>
+        <div id="category-list">
+            <!-- Category items will be dynamically inserted here -->
+        </div>
+        <div id="product-list">
+            <!-- Product items will be dynamically inserted here -->
+        </div>
+        <div id="pagination">
+            <!-- Pagination buttons will be dynamically inserted here -->
+        </div>
+
+        <footer id="footerContent">
+
+        </footer>
+
+        <!-- Copyright section ------------------------------------------------>
+        <div class="footer-copyright">
+            <p>@2024 All Rights Reserved. Design by Memona Rao</p>
+        </div>
+    </div>
+
+
+    <script src="category.js"></script>
+</body>
+
+</html>
